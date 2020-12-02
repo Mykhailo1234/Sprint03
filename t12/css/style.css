@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+body {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.container > .buttons,
+.container > .firstWorkspace,
+.container > .secondWorkspace {
+    margin: 10px 0;
+}
+
+/*== button ==*/
+.add {
+    background-color: rgb(22, 240, 211);
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    color: white;
+}
+.clear {
+    background-color: rgb(240, 233, 233);
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    color: #000;
+}
+.firstWorkspace > p,
+.secondWorkspace > p {
+    color: #003b72;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* == == */
+.firstWorkspace,
+.secondWorkspace {
+    background: #f0f0f0;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+}
+.firstWorkspace > textarea {
+    border-color: rgb(22, 240, 211);
+}
+#secondBox {
+    overflow-y: scroll;
+}

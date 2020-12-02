@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Tic tac toe</h1>
+    <div id="container">
+        <div id="area">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+
+        <bu class="sidebar">
+
+            <div class="sidebar__info">
+
+                <div id="player1" class="sidebar__player turn">Player 1</div>
+                <div id="player2" class="sidebar__player">Player 2</div>
+                <p>Number of turns</p>
+                <div id="turns-count"></div>
+            </div>
+
+            <div class="result"></div>
+            <input type="button" id="searchButton" value="Play again" onclick="javascript:Search()" />  <!-- button підключення за допомогою скрипта -->
+
+        </aside>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

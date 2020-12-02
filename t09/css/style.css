@@ -1,0 +1,99 @@
+.box, .play-btn, #turns-count {
+  transition: all .1s ease;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-bottom: 3px solid #9A9A9A;
+  background-color: #C1C1C1;
+  box-shadow:
+    .5px .5px 0 0 #D98D21, 1px 1px 0 0 #D98D21, 1.5px 1.5px 0 0 #D98D21,
+    2px 2px 0 0 #D98D21, 2.5px 2.5px 0 0 #D98D21, 3px 3px 0 0 #D98D21;
+  margin: 0 5px 10px;
+  font-size: 80px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 143px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.box:hover {
+  border-bottom: 3px solid transparent;
+  box-shadow: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+  margin-bottom: 3px;
+}
+
+.sidebar {
+  background-color: #C1C1C1;
+  margin-left: 7px;
+  padding: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  width: 130px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar__player {
+  background-color: #D3D3D3;
+  text-align: center;
+  margin-bottom: 7px;
+  padding: 9px 7px;
+  cursor: default;
+}
+
+.sidebar__info {
+  width: 100%;
+}
+
+.searchButton {
+  background-color: #D3D3D3;
+  text-align: center;
+  margin-bottom: 7px;
+  padding: 9px 7px;
+  cursor: default;
+}
+
+
+.turn {
+  background-color: #D98D21;
+}
+
+#searchButton {
+  width: 150px;
+  height: 100px;
+  border-radius: 30px;
+  margin: 0 0 -100px 0;
+}
+#searchButton:hover {
+  background: #D98D21;
+}
+
